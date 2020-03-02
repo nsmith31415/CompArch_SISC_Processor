@@ -1,0 +1,14 @@
+SISC Project Part 1
+Nick Smith, Alan Rolla
+
+Part 1 Implementation was completed by first creating the necessary wires for the datapath.
+Following their creation, we instantiated every module with the necessary inputs and outputs to link them all together and allow passing data between them.
+After instantiaton and creation of the $monitor(...) line, the SISC.v file was complete.
+
+Following completion of the SISC.v file, it was necessary to define the correct outputs from CTRL.v.
+To do this, we created a series of if/else statements to first check whether the operation is a NOOP, and then check the state the machine was in.
+If fed a NOOP, we could set the three necessary outputs to zero. Otherwise, in fetching state we would also set the outputs to zero.
+In decoding state, we did not have any logic that was crucial to this part of the project.
+In execution state, we would check the mm value to see if we needed to override the ALU so it understands it is being fed an immediate value.
+After execution state is mem state, where under our operations we would need to set RF_WE to 1 so the values calculated could be written into memory.
+Finally in writeback state, there was nothing we needed to implement at this time.

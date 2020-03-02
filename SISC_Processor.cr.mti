@@ -1,0 +1,57 @@
+H:/Classes/CompArch/Project/sisc_p1_files/ctrl.v {1 {vlog -work work -stats=none H:/Classes/CompArch/Project/sisc_p1_files/ctrl.v
+Model Technology ModelSim DE-64 vlog 2019.2 Compiler 2019.04 Apr 17 2019
+-- Compiling module ctrl
+
+Top level modules:
+	ctrl
+
+} {} {}} H:/Classes/CompArch/Project/sisc_p1_files/alu.v {1 {vlog -work work -stats=none H:/Classes/CompArch/Project/sisc_p1_files/alu.v
+Model Technology ModelSim DE-64 vlog 2019.2 Compiler 2019.04 Apr 17 2019
+-- Compiling module alu
+
+Top level modules:
+	alu
+
+} {} {}} H:/Classes/CompArch/Project/sisc_p1_files/mux4.v {1 {vlog -work work -stats=none H:/Classes/CompArch/Project/sisc_p1_files/mux4.v
+Model Technology ModelSim DE-64 vlog 2019.2 Compiler 2019.04 Apr 17 2019
+-- Compiling module mux4
+
+Top level modules:
+	mux4
+
+} {} {}} H:/Classes/CompArch/Project/sisc_p1_files/sisc.v {1 {vlog -work work -stats=none H:/Classes/CompArch/Project/sisc_p1_files/sisc.v
+Model Technology ModelSim DE-64 vlog 2019.2 Compiler 2019.04 Apr 17 2019
+-- Compiling module sisc
+
+Top level modules:
+	sisc
+
+} {} {}} H:/Classes/CompArch/Project/sisc_p1_files/statreg.v {1 {vlog -work work -stats=none H:/Classes/CompArch/Project/sisc_p1_files/statreg.v
+Model Technology ModelSim DE-64 vlog 2019.2 Compiler 2019.04 Apr 17 2019
+-- Compiling module statreg
+
+Top level modules:
+	statreg
+
+} {} {}} H:/Classes/CompArch/Project/sisc_p1_files/mux32.v {1 {vlog -work work -stats=none H:/Classes/CompArch/Project/sisc_p1_files/mux32.v
+Model Technology ModelSim DE-64 vlog 2019.2 Compiler 2019.04 Apr 17 2019
+-- Compiling module mux32
+
+Top level modules:
+	mux32
+
+} {} {}} H:/Classes/CompArch/Project/sisc_p1_files/sisc_tb_p1.v {1 {vlog -work work -stats=none H:/Classes/CompArch/Project/sisc_p1_files/sisc_tb_p1.v
+Model Technology ModelSim DE-64 vlog 2019.2 Compiler 2019.04 Apr 17 2019
+-- Compiling module sisc_tb
+
+Top level modules:
+	sisc_tb
+
+} {} {}} H:/Classes/CompArch/Project/sisc_p1_files/rf.v {1 {vlog -work work -stats=none H:/Classes/CompArch/Project/sisc_p1_files/rf.v
+Model Technology ModelSim DE-64 vlog 2019.2 Compiler 2019.04 Apr 17 2019
+-- Compiling module rf
+
+Top level modules:
+	rf
+
+} {} {}}
