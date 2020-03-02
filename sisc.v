@@ -20,8 +20,12 @@ module sisc (clk, rst_f, ir);
 
 
   initial
-  
+  begin
 // put a $monitor statement here.  
+	/*	please monitor the following signals: IR, R1 through R5, RD_SEL, ALU_OP,
+		WB_SEL, RF_WE and STAT.
+	*/
+  end 
 
 
 
