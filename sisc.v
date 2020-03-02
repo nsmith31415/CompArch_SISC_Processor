@@ -25,18 +25,20 @@ module sisc (clk, rst_f, ir);
 	wire [31:0] RSB;
 	//From alu_out
 	wire [31:0] alu_result;
-	//Output of mux4 to Rf
+
+	//MUX4
 	wire [3:0] mux4_result;
+	
 	//Output of mux32
 	wire [31:0] mux32_result;
 
 // component instantiation goes here
 // Component Initialization
-	alu my_alu(.clk(clk), .rsa(RSA), .rsb(RSB), .imm(IR[15:0], .alu_op(ALU_OP), .alu_result(alu_result), .stat(STAT_OUT), .stat_en(STAT_EN));
-	ctrl my_ctrl(.clk(clk), .rst_f(rst_f), .opcode(IR[32:28]), .mm(IR[27:24]), .stat(STAT_OUT), .rf_we(RF_WE), .alu_op(ALU_OP), .wb_sel(WB_SEL)	);
-	mux4 my_mux4(.in_a(IR[23:20]), .in_b(IR[15,12]), .sel(0), .out(mux4_result));
+	alu my_alu(.clk(clk), .rsa(RSA), .rsb(RSB), .imm(ir[15:0]), .alu_op(ALU_OP), .alu_result(alu_result), .stat(STAT_OUT), .stat_en(STAT_EN));
+	ctrl my_ctrl(.clk(clk), .rst_f(rst_f), .opcode(ir[31:28]), .mm(ir[27:24]), .stat(STAT_OUT), .rf_we(RF_WE), .alu_op(ALU_OP), .wb_sel(WB_SEL)	);
+	mux4 my_mux4(.in_a(ir[23:20]), .in_b(ir[15:12]), .sel(1'b0), .out(mux4_result));
 	mux32 my_mux32(.in_a(RSA), .in_b(RSB), .sel(WB_SEL), .out(mux32_result));
-	rf my_rf (.clk(clk), .read_rega(IR[23:30]), .read_regb(mux4_result[3:0]), .write_reg(IR[23:20]), .write_data(mux32_result[31:0], .rf_we(rf_we), .rsa(RSA), .rsb(RSB));
+	rf my_rf (.clk(clk), .read_rega(ir[23:20]), .read_regb(mux4_result[3:0]), .write_reg(ir[23:20]), .write_data(mux32_result[31:0]), .rf_we(rf_we), .rsa(RSA), .rsb(RSB));
 	statreg my_statreg();
   initial
   begin
