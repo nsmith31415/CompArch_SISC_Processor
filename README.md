@@ -1,2 +1,6 @@
-# CompArch_SISC_Processor
-Project for Computer Architecture and Organization at the University of Iowa. 
+# Implementation description:
+Nick Smith and Alan Rolla
+ECE:3350
+Project - Part 1
+
+  Implementation description goes here 
