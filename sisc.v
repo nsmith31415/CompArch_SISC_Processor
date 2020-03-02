@@ -24,6 +24,11 @@ module sisc (clk, rst_f, ir);
 // put a $monitor statement here.  
 	/*	please monitor the following signals: IR, R1 through R5, RD_SEL, ALU_OP,
 		WB_SEL, RF_WE and STAT.
+		
+		 If you have instantiated module rf with the name my_rf, you can access R1
+		with the following syntax in the $monitor signal list, i.e. my_rf.ram_array[1].
+		
+		
 	*/
   end 
 
