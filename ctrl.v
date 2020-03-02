@@ -1,9 +1,9 @@
 // ECE:3350 SISC computer project
 // finite state machine
-
+// Nick Smith and Alan Rolla
 `timescale 1ns/100ps
 
-module ctrl (clk, rst_f, opcode, mm, stat, rf_we, alu_op, wb_sel);
+module ctrl (clk, rst_f, opcode, mm, stat, rd_sel, rf_we, alu_op, wb_sel);
 
   /* Declare the ports listed above as inputs or outputs.  Note that
      you will add signals for parts 2, 3, and 4. */
@@ -11,7 +11,7 @@ module ctrl (clk, rst_f, opcode, mm, stat, rf_we, alu_op, wb_sel);
   input clk, rst_f;
   input [3:0] opcode, mm, stat;
   output reg rf_we, wb_sel;
-  output reg [1:0] alu_op;
+  output reg [1:0] alu_op, rd_sel;
   
   // state parameter declarations
   
@@ -58,16 +58,11 @@ module ctrl (clk, rst_f, opcode, mm, stat, rf_we, alu_op, wb_sel);
           next_state = start1;
 	else
           next_state = fetch;
-      fetch:
-        next_state = decode;
-      decode:
-        next_state = execute;
-      execute:
-        next_state = mem;
-      mem:
-        next_state = writeback;
-      writeback:
-        next_state = fetch;
+      fetch:	 next_state = decode;
+      decode:	 next_state = execute;
+      execute:	 next_state = mem;
+      mem:	 next_state = writeback;
+      writeback: next_state = fetch;
       default:
         next_state = start1;
     endcase
@@ -87,6 +82,9 @@ always @(posedge clk)
 	//second check state
 	if(present_state == fetch)
 		begin
+		rf_we<=0;
+		alu_op <= 2'b00;
+		wb_sel<=0;
 		//third check opcode
 		if(opcode == 4'b1000) //opcode for ALU op
 			begin
@@ -99,11 +97,12 @@ always @(posedge clk)
 		begin
 		if(opcode == 4'b1000) //opcode for ALU op
 			begin
-			//decoding not yet needed.
+			//not necessary
 			end
 		end
 	else if (present_state == execute)
 		begin
+		
 		//third check opcode
 		if(opcode == 4'b1000) //opcode for ALU op
 			begin
@@ -123,7 +122,7 @@ always @(posedge clk)
 		//third check opcode
 		if(opcode == 4'b1000) //opcode for ALU op
 			begin
-			//mem state not yet used
+			rf_we=1;
 			end
 		end
 	else if (present_state == writeback)
