@@ -15,6 +15,13 @@ module sisc (clk, rst_f, ir);
 	wire RF_WE;
 	wire STAT_EN;
 	wire 
+	//RSA and RSB to ALB
+	wire [31:0] RSA;
+	wire [31:0] RSB;
+	//From alu_out
+	wire [31:0] alu_result;
+	//Output of mux4 to Rf
+	wire [3:0] mux4_result;
 
 // component instantiation goes here
 
