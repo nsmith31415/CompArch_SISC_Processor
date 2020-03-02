@@ -73,8 +73,64 @@ module ctrl (clk, rst_f, opcode, mm, stat, rf_we, alu_op, wb_sel);
     endcase
   end
   
-  /* TODO: Generate the rf_we, alu_op, wb_sel outputs based on the FSM states 
-     and inputs. For Parts 2, 3 and 4 you will add the new control signals here. */
+
+//Check on rising clock edges
+always @(posedge clk)
+	begin
+	//first check for no operation
+	if(opcode == NOOP)
+		begin
+		rf_we=1'b0;
+		alu_op=2'b00;
+		wb_sel=1'b0;
+		end
+	//second check state
+	if(present_state == fetch)
+		begin
+		//third check opcode
+		if(opcode == 4'b1000) //opcode for ALU op
+			begin
+			rf_we=1'b0;
+			alu_op=2'b00;
+			wb_sel=1'b0;
+			end
+		end
+	else if (present_state == decode)
+		begin
+		if(opcode == 4'b1000) //opcode for ALU op
+			begin
+			//decoding not yet needed.
+			end
+		end
+	else if (present_state == execute)
+		begin
+		//third check opcode
+		if(opcode == 4'b1000) //opcode for ALU op
+			begin
+				//fourth check mm, if 1000, use immediate load instead of input B
+				if(mm==4'b1000)
+					begin
+					alu_op<=2'b01;
+					end
+				else
+					begin
+					alu_op<=2'b00;
+					end
+			end
+		end
+	else if (present_state == mem)
+		begin
+		//third check opcode
+		if(opcode == 4'b1000) //opcode for ALU op
+			begin
+			//mem state not yet used
+			end
+		end
+	else if (present_state == writeback)
+		begin
+			//writeback state not yetused
+		end
+	end
 
 // Halt on HLT instruction
   
