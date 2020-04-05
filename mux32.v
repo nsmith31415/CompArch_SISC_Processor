@@ -31,8 +31,9 @@ module mux32 (in_a, in_b, sel, out);
       outreg = in_a;
     else
       outreg = in_b;
+
   end
 
   assign out = outreg;
-
+	
 endmodule

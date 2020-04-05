@@ -10,7 +10,7 @@ z2
 cModel Technology
 dC:/MentorGraphics/examples
 valu
-Z0 !s110 1583143976
+Z0 !s110 1586065739
 !i10b 1
 !s100 ?FYPeRc<O_A68BlhmbGOi1
 !s11b 1SdPK0304a<SKQdS0Z<l^1
@@ -25,21 +25,43 @@ Z3 OP;L;2019.2;69
 r1
 !s85 0
 31
-Z4 !s108 1583143976.000000
+Z4 !s108 1586065739.000000
 !s107 H:/Classes/CompArch/SISC_Processor/alu.v|
 !s90 -reportprogress|300|-work|work|H:/Classes/CompArch/SISC_Processor/alu.v|
 !i113 1
 Z5 o-work work
 Z6 tCvgOpt 0
+vbr
+R0
+!i10b 1
+!s100 >VMbEzMU9SmF^SD]BcS972
+!s11b zza9lYA5;mh<`Tn3L;VN81
+InR17@Xo]T8JE3Go:f:g]>0
+R1
+R2
+w1454959679
+8H:/Classes/CompArch/SISC_Processor/br.v
+FH:/Classes/CompArch/SISC_Processor/br.v
+L0 6
+R3
+r1
+!s85 0
+31
+R4
+!s107 H:/Classes/CompArch/SISC_Processor/br.v|
+!s90 -reportprogress|300|-work|work|H:/Classes/CompArch/SISC_Processor/br.v|
+!i113 1
+R5
+R6
 vctrl
 R0
 !i10b 1
-!s100 KAEA<5W2onZQLc_[8ieO;3
-!s11b zCFkc[oRTGX7<><676<fZ3
-ILjgk2<7S6eIYmP4oocoVP1
+!s100 CVYF1X:lF^o98_]9mVZOa2
+!s11b 4:PYF^Wcn=ZA<oGd;Z21V1
+I?g[KRG^8W7^WnNdKoM4X<1
 R1
 R2
-w1583143079
+w1586065727
 8H:/Classes/CompArch/SISC_Processor/ctrl.v
 FH:/Classes/CompArch/SISC_Processor/ctrl.v
 L0 6
@@ -53,8 +75,52 @@ R4
 !i113 1
 R5
 R6
+vim
+Z7 !s110 1586065740
+!i10b 1
+!s100 >3?gDEl2GB3@@laE7ZIRR0
+!s11b aLNkQdi_e[E:dDIUA4S4?2
+Ikzl2b=VdbU`2dQL1OX;6i1
+R1
+R2
+w1459968165
+8H:/Classes/CompArch/SISC_Processor/im.v
+FH:/Classes/CompArch/SISC_Processor/im.v
+L0 6
+R3
+r1
+!s85 0
+31
+R4
+!s107 H:/Classes/CompArch/SISC_Processor/im.v|
+!s90 -reportprogress|300|-work|work|H:/Classes/CompArch/SISC_Processor/im.v|
+!i113 1
+R5
+R6
+vir
+R7
+!i10b 1
+!s100 Y=ZB>@]hoFbXD1D`4MBBO3
+!s11b <I6V6aPVKzR]M3FH=?oc60
+I?1nX3H8FhH[zB2DiXMFMO3
+R1
+R2
+w1459963333
+8H:/Classes/CompArch/SISC_Processor/ir.v
+FH:/Classes/CompArch/SISC_Processor/ir.v
+L0 6
+R3
+r1
+!s85 0
+31
+Z8 !s108 1586065740.000000
+!s107 H:/Classes/CompArch/SISC_Processor/ir.v|
+!s90 -reportprogress|300|-work|work|H:/Classes/CompArch/SISC_Processor/ir.v|
+!i113 1
+R5
+R6
 vmux32
-Z7 !s110 1583143977
+R7
 !i10b 1
 !s100 lm4X?BSNb;aYcigMTk0UM1
 !s11b CaN3BW<@nkdgkC4h1QRGM1
@@ -69,14 +135,14 @@ R3
 r1
 !s85 0
 31
-R4
+R8
 !s107 H:/Classes/CompArch/SISC_Processor/mux32.v|
 !s90 -reportprogress|300|-work|work|H:/Classes/CompArch/SISC_Processor/mux32.v|
 !i113 1
 R5
 R6
 vmux4
-R0
+R7
 !i10b 1
 !s100 RE<We:R5;YY3KVTVmMe_A2
 !s11b :IPC=0YX9B?Tz5cUSzmXW0
@@ -91,9 +157,31 @@ R3
 r1
 !s85 0
 31
-R4
+R8
 !s107 H:/Classes/CompArch/SISC_Processor/mux4.v|
 !s90 -reportprogress|300|-work|work|H:/Classes/CompArch/SISC_Processor/mux4.v|
+!i113 1
+R5
+R6
+vpc
+R7
+!i10b 1
+!s100 UdNg0Qb6o=;7cG4<IKYf<2
+!s11b 1fZReCljnF=3LYSnJ`SCd3
+I4GjBI2g27oF5mh8kViF::3
+R1
+R2
+w1516305040
+8H:/Classes/CompArch/SISC_Processor/pc.v
+FH:/Classes/CompArch/SISC_Processor/pc.v
+L0 6
+R3
+r1
+!s85 0
+31
+R8
+!s107 H:/Classes/CompArch/SISC_Processor/pc.v|
+!s90 -reportprogress|300|-work|work|H:/Classes/CompArch/SISC_Processor/pc.v|
 !i113 1
 R5
 R6
@@ -113,7 +201,7 @@ R3
 r1
 !s85 0
 31
-Z8 !s108 1583143977.000000
+R8
 !s107 H:/Classes/CompArch/SISC_Processor/rf.v|
 !s90 -reportprogress|300|-work|work|H:/Classes/CompArch/SISC_Processor/rf.v|
 !i113 1
@@ -122,12 +210,12 @@ R6
 vsisc
 R7
 !i10b 1
-!s100 DDKGg4FSn5YegbYMn64BV2
-!s11b dIXKnUcnY<m@<B30F3:>10
-I[kQ3obH90?PJU;VOakAJU0
+!s100 4HbMjhcPU6Cc6XM1FR^SS2
+!s11b 2hJnOEYTX5gYO7n_?6Ih02
+Ig9ahz[5a76Ha87m_[Fz;I3
 R1
 R2
-w1583143973
+w1586065118
 8H:/Classes/CompArch/SISC_Processor/sisc.v
 FH:/Classes/CompArch/SISC_Processor/sisc.v
 L0 7
@@ -144,27 +232,27 @@ R6
 vsisc_tb
 R7
 !i10b 1
-!s100 `Jcm1mXU]b>GXh3KeSFfA2
-!s11b Li0LeL9DKdoPbDZ3zF>6S1
-IY8<GXoQR3:3Qh?VS87;Wz1
+!s100 oDlPMehULl8@7^2S>gK3Z1
+!s11b KY4QH2ZZ_U334@OWa?VKh3
+I]:XFH9oi>K=WgKzaVVz843
 R1
 R2
-w1583137985
-8H:/Classes/CompArch/SISC_Processor/sisc_tb_p1.v
-FH:/Classes/CompArch/SISC_Processor/sisc_tb_p1.v
+w1459959845
+8H:/Classes/CompArch/SISC_Processor/sisc_tb_p2.v
+FH:/Classes/CompArch/SISC_Processor/sisc_tb_p2.v
 L0 6
 R3
 r1
 !s85 0
 31
 R8
-!s107 H:/Classes/CompArch/SISC_Processor/sisc_tb_p1.v|
-!s90 -reportprogress|300|-work|work|H:/Classes/CompArch/SISC_Processor/sisc_tb_p1.v|
+!s107 H:/Classes/CompArch/SISC_Processor/sisc_tb_p2.v|
+!s90 -reportprogress|300|-work|work|H:/Classes/CompArch/SISC_Processor/sisc_tb_p2.v|
 !i113 1
 R5
 R6
 vstatreg
-R7
+!s110 1586065741
 !i10b 1
 !s100 MJkL87QlS:::zz=oZ=a3h3
 !s11b V0nP]40>eBZYl6V_[SO`O3
